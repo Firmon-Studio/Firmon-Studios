@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Marketing Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Social Media Marketing Tool</h1>
+    </header>
+
+    <section id="login">
+        <h2>Login</h2>
+        <!-- Add your login form here -->
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="upload">
+        <h2>Upload Content</h2>
+        <!-- Add your content upload form here -->
+        <form>
+            <label for="media">Select media (image or video):</label>
+            <input type="file" id="media" name="media" accept="image/*, video/*" required>
+
+            <button type="button" onclick="uploadToSocialMedia()">Upload</button>
+        </form>
+    </section>
+
+    <section id="payment">
+        <h2>Payment</h2>
+        <!-- Add your payment form here -->
+        <form>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <button type="button" onclick="processPayment()">Process Payment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Social Media Marketing Tool</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
